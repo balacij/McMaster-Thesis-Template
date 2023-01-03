@@ -1,20 +1,85 @@
 \chapter{Introduction}
 \label{chap:introduction}
 
-\section{Getting Started}
-\label{chap:introduction:sec:getting-started}
+Congratulations! If you're seeing this, it means you've managed to compile the
+\acs{pdf}, which also means you can get started on type-setting your
+thesis\footnote{Or report or \ldots{}}.
 
-\subsection{Pre-requisites}
-\label{chap:introduction:sec:getting-started:subsec:pre-requisites}
+This template is adapted from my
+\porthref{thesis}{https://github.com/JacquesCarette/Drasil/tree/master/People/Jason/thesis}.
+If you'd like to see an example of this template in practice, please feel free
+to use my thesis as an example.
 
-\subsection{Template Usage}
-\label{chap:introduction:sec:getting-started:subsec:template-usage}
+\section{Template Organization}
+\label{chap:introduction:sec:template-organization}
+
+\imptodo{Jason: Write out template organization}
+
+\section{Development Recommendations}
+\label{chap:introduction:sec:development-recommendations}
+
+Other than the basic tools I used for this template, I enjoyed using the
+following tools while writing my thesis:
+
+\begin{enumerate}
+    \item \porthref{VS Codium}{https://vscodium.com/}/\porthref{VS
+              Code}{https://code.visualstudio.com/}\footnote{I prefer VS Codium
+              simply because I prefer libre software.} with the following
+          extensions:
+          \begin{enumerate}
+              \item \porthref{\LaTeX{}
+                        Workshop}{https://open-vsx.org/extension/James-Yu/latex-workshop},
+                    for \LaTeX{} syntax highlighting, code formatting (this
+                    is highly recommended), and code completion,
+              \item \porthref{LTeX - LanguageTool grammar/spell
+                        checking}{https://open-vsx.org/extension/valentjn/vscode-ltex}, for
+                    grammar checking using
+                    \porthref{LangaugeTool}{https://languagetool.org/}, and
+              \item \porthref{Todo
+                        Tree}{https://open-vsx.org/extension/Gruntfuggly/todo-tree}, for
+                    quickly listing all of my TODO notes in my \acs{ide} (in addition to
+                    the list at the top of the \acs{pdf}).
+          \end{enumerate}
+    \item \porthref{texcount}{https://ctan.org/pkg/texcount?lang=en} (which
+    should come with your \LaTeX{} installation) to quickly check the word count
+    of individual \LaTeX{} files, and
+    \item \porthref{Zotero}{https://www.zotero.org/} for collecting my
+    references and quickly exporting bib entries that I could use.
+\end{enumerate}
+
+In particular, when writing, I found it particularly helpful to use VS Code's
+``Zen Mode'' (to see your keybind, press ``CTRL+ALT+P'' and search for ``Zen''),
+which enters a stripped-down full-screen version of the current working file,
+keeping your eyes purely focused on the document in front of you. Being
+comfortable with the keybinds is particularly helpful for working effectively in
+this setup. For example, I found the following\footnote{If you're not using
+Linux, I cannot guarantee that these will be the same for you, so you should use
+``CTRL+ALT+P'' to look for your appropriate bound keybinds.} to be helpful:
+``CTRL+TAB'' and ``CTRL+SHIFT+TAB'' to scroll between open files, ``CTRL+P'' to
+quickly open up recent files, ``CTRL+ALT+P'' to run commands you forgot the
+keybind for, ``CTRL+O'' to open up files out of the current working directory.
+
+While writing, I enjoyed:
+
+\begin{enumerate}
+    \item using ``TODO'' notes\eztodo{Such as this one, but check out
+          \Cref{chap:extras:sec:todos} for more options.} to collect notes that
+          I would want to do later,
+    \item formatting the \LaTeX{} code to make it easier to read (the \LaTeX{}
+          Workshop plugin has functionality for this),
+    \item breaking the non-textual content into separate files and
+          ``include''-ing them in the \LaTeX{} code so that they didn't cause
+          large visual interruptions,
+    \item using git to version control copies of my thesis, chapters, etc.,
+    \item using \porthref{TikZ}{https://tikz.net/} and
+          \porthref{draw.io/diagrams.net}{https://www.diagrams.net/} to build
+          graphics and diagrams, and
+    \item building the thesis often using \inlineCode{console}{make debug} to
+          quickly debug issues in the written code.
+\end{enumerate}
 
 \section{Troubleshooting}
 \label{chap:introduction:sec:troubleshooting}
 
-\section{\LaTeX{} Organization}
-\label{chap:introduction:sec:latex-organization}
-
-\section{Development Recommendations}
-\label{chap:introduction:sec:development-recommendations}
+``StackOverflow'' is a great area to look for solutions to common \LaTeX{}
+issues. Otherwise, feel free to use create a ticket or sending an email to me.
