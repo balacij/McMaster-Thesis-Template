@@ -65,9 +65,10 @@ the general schema I've built, or to modify it to your liking.
 Please note that I built this template using publicly available resources, such
 as [Overleaf](https://www.overleaf.com/), [LaTeX
 Wikibooks](https://en.wikibooks.org/wiki/LaTeX), as well as many works by
-individuals (for both inspiration and code snippets):
+individuals (for both inspiration and code snippets), in no particular order:
 
 * Benjamin Furman's [McMaster Thesis Example](https://www.overleaf.com/latex/templates/mcmaster-thesis-example/bjccppctqwgt) based on Steven Gunn and Sunil Patel's work.
+* Geneva Smith's [McMaster thesis template](https://www.eng.mcmaster.ca/cas/current-graduates#Graduate-Student-Forms).
 * Clemens Niederberger for this public [StackOverflow response](https://tex.stackexchange.com/a/257896).
 * Arash Esbati for this public [StackOverflow response](https://tex.stackexchange.com/a/254177).
 * Gabriel Devenyi's [McMaster Thesis
