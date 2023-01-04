@@ -1,4 +1,6 @@
-# Thesis Template
+# McMaster Thesis Template
+
+A thesis template for McMaster students.
 
 ## System Requirements
 
@@ -18,10 +20,10 @@ in the `manifest.tex` configuration file and rebuild the document.
 
 ### Debugging
 
-`make build` runs so fast (because it runs without interactivity) that we might
-not be able to find errors with our documents. To run the TeX build
-interactively, please run `make debug` instead of `make build` when building
-your thesis.
+`make build` runs fast because it runs without interactivity. To run the TeX
+build interactively, please run `make debug` instead of `make build` when
+building your thesis. This will allow you to debug any visual artifacts found in
+your PDF, or the lack thereof.
 
 ## Configuration
 
@@ -52,14 +54,21 @@ You should be mindful of all of these above listed files. Each one will have its
 own discussion of its usage in its respective header, but you are free to ignore
 the general schema I've built, or to modify it to your liking.
 
-## Citation
+## Credits
 
-If you need to cite this work, please cite using the following BibTeX:
-```
-@mastersthesis{Balaci2022MSc,
-  author = {Balaci, Jason},
-  school = {McMaster University},
-  title  = {Adding Types and Theory Kinds to Drasil},
-  year   = {2022}
-}
-```
+Please note that I built this template using publicly available resources, such
+as [Overleaf](https://www.overleaf.com/), [LaTeX
+Wikibooks](https://en.wikibooks.org/wiki/LaTeX), as well as many works by
+individuals (for both inspiration and code snippets):
+
+* Benjamin Furman's [McMaster Thesis Example](https://www.overleaf.com/latex/templates/mcmaster-thesis-example/bjccppctqwgt) based on Steven Gunn and Sunil Patel's work.
+* Clemens Niederberger for this public [StackOverflow response](https://tex.stackexchange.com/a/257896).
+* Arash Esbati for this public [StackOverflow response](https://tex.stackexchange.com/a/254177).
+* Gabriel Devenyi's [McMaster Thesis
+  LaTeX](https://github.com/gdevenyi/mcmaster.latex), specifically for the
+  bibliography code.
+* "tom" from
+  [TeXBlog](https://texblog.org/2012/03/21/cross-referencing-list-items/).
+
+If you feel you should be added to this list, please feel free to open a ticket
+or email me, and I will add you as soon as I can.

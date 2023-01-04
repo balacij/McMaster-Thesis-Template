@@ -13,6 +13,9 @@ help:
 
 system_requirements:
 	@echo "System Requirements: LaTeX (latexmk + LuaLaTeX), Pygments, InkScape"
+	@echo "  - working LaTeX installation (with latexmk and LuaLaTeX)"
+	@echo "  - Pygments (for code snippet syntax highlighting, installed with Python/pip)"
+	@echo "  - InkScape (for SVG-based figures)"
 
 build: # standard build -- '-output-directory=build' is a special name and is referenced from '\usepackage{minted}'region in 'thesis.tex'
 	latexmk -output-directory=build -pdflatex=lualatex -pdf -interaction=nonstopmode thesis.tex --shell-escape
