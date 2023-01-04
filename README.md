@@ -4,6 +4,12 @@ A thesis template for McMaster students.
 
 ## System Requirements
 
+You will need to install:
+
+* a working [LaTeX installation](https://github.com/JacquesCarette/Drasil/wiki/New-Workspace-Setup#latex),
+* [Pygments](https://pygments.org/), and
+* [InkScape](https://inkscape.org/).
+
 Please run `make system_requirements` for an up-to-date list of system
 requirements for building the report.
 
