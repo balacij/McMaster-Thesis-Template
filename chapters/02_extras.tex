@@ -58,5 +58,35 @@ option as mentioned, then you will see the link in a footnote (try it out!).
 \section{Code Snippets}
 \label{chap:extras:sec:code-snippets}
 
+Since I did my Master's in computer science, I needed code snippet listings. For
+them, I chose to use the \texttt{minted} package (which lets you write
+colourized code snippets, supporting syntax highlighting for many languages).
+However, I also wanted source code listings to be linked to the main Drasil
+\cite{Drasil2021} repository. For example, to write
+\refExampleCode{}\footnote{Note: the header links use the portable \acsp{href}
+(as per \Cref{chap:extras:sec:hrefs})!}, I had to write
+\texttt{assets/code/example.tex} and create appropriate links in
+\texttt{assets.tex}. Additionally, for pseudocode, you can also use the
+pseudocode environment, such as that used in \refExamplePseudocode{} (similarly
+built).
+
 \section{TODOs}
 \label{chap:extras:sec:todos}
+
+While writing, I plastered my thesis with notes for future work because, for
+whatever reason, I just didn't want to, or wasn't able to, do said work at that
+time. To help me sort out my notes, I used the \texttt{todonotes}
+\porthref{package}{https://ctan.org/pkg/todonotes?lang=en} with a few extra
+macros (defined in \texttt{macros.tex}). For example,\ldots{}
+
+Important notes: \imptodo{``Important'' notes.}
+
+Generic inlined notes: \intodo{Generic inlined notes.}
+
+Notes for later: \latertodo{TODO notes for later! For finishing touches, etc.}
+
+Some ``easy'' notes: \eztodo{Easier notes.}
+
+Tedious work: \tedioustodo{Tedious notes.}
+
+Questions: \qtodo{Questions I might have?}
