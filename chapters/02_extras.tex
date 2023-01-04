@@ -3,18 +3,57 @@
 
 \begin{writingdirectives}
 
-    \item Test
-
+    \item What macros do I want the reader to know about?
+    
 \end{writingdirectives}
 
 \section{Writing Directives}
 \label{chap:extras:sec:writing-directives}
 
+I enjoy writing directives (mostly questions) to navigate what I should be
+writing about in each chapter. You can do this using:
+
+\begin{pseudocode}{latex}{exWD}{Example Writing Directives}
+\begin{writingdirectives}
+    \item What macros do I want the reader to know about?
+\end{writingdirectives}
+\end{pseudocode}
+
+Personally, I put them at the top of chapter files, just after chapter
+declarations.
+
 \section{Acronyms}
 \label{chap:extras:sec:acronyms}
 
+I used a lot of acronyms in my thesis, and I wanted to add a glossary to the
+front matter. This is compulsory for McMaster theses, but you may remove it if
+you don't need it. I used the \texttt{acro} package, feel free to read their
+\porthref{documentation}{https://ctan.org/pkg/acro?lang=en}. For example, I
+might want to write \acf{html} (written using \inlineCode{latex}{\acf{html}}) or
+just \acs{html} (written using \inlineCode{latex}{\acs{html}}). To define them,
+you can find examples in the \texttt{acronyms.tex} file.
+
 \section{\acsp{href}}
 \label{chap:extras:sec:hrefs}
+
+For \acsp{pdf}, we have (at least) 2 ways of viewing them: on our computers, and
+printed out on paper. If you choose to view through your computer, reading links
+(as they are linked in this example, inlined everywhere with ``clickable''
+links) is fine. However, if you choose to read it on printed paper, you will
+find trouble clicking on those same links. To mitigate this issue, I built the
+``porthref'' macro (see \texttt{macros.tex} for the definition) to build links
+that appear as clickable text when ``compiling for computer-focused reading,''
+and adds links to footnotes when ``compiling for printing-focused reading.''
+There is an option (\texttt{compilingforprinting}) in the \texttt{manifest.tex}
+file that controls whether \acs{pdf} builds should be done for computers or for
+printers. For example, by default, \porthref{McMaster}{https://www.mcmaster.ca/}
+is made with clickable functionaity, but if you change the \texttt{manifest.tex}
+option as mentioned, then you will see the link in a footnote (try it out!).
+
+
+\begin{pseudocode}{latex}{exPHref}{Example Portable HREF}
+\porthref{McMaster}{https://www.mcmaster.ca/}
+\end{pseudocode}
 
 \section{Code Snippets}
 \label{chap:extras:sec:code-snippets}
